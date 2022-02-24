@@ -1,0 +1,90 @@
+.cases {
+    padding-top: 165px;
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__wrapper {
+        max-width: 1353px;
+        margin: 0 auto;
+    }
+    &-block {
+        display: flex;
+        position: relative;
+        &__content {
+            padding-left: 150px;
+        }
+        &__number {
+            font-weight: 700;
+            font-size: 96px;
+            color: rgba(#7B2FDF, .3);
+        }
+        &__address {
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: #684ECC;
+            margin-bottom: 34px;
+        }
+        &__title {
+            position: relative;
+            font-size: 50px;
+            line-height: 68px;
+            text-align: left;
+            padding-left: 32px;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                background: url('../icons/cases/cases-title-before.svg') center (center / cover) no-repeat;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            padding-left: 32px;
+            margin-bottom: 30px;
+        }
+        &__first {
+            position: absolute;
+            top: -80px;
+            right: -210px;
+            z-index: -1;
+        }
+        &__second {
+            position: absolute;
+            left: -270px;
+            top: -80px;
+            z-index: -1;
+        }
+        &__thrid {
+            position: absolute;
+            right: -210px;
+            top: 132px;
+            z-index: -1;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 35%;
+                left: 40%;
+                width: 235px;
+                height: 257px;
+                background: url('../img/cases/cases-img-before.png') center no-repeat;
+
+            }
+        }
+    }
+    &-block--second {
+        .cases-block__content {
+            padding-left: 70px;
+        }
+    }
+    &-block__img-mobile {
+        display: none;
+    }
+}

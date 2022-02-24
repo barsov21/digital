@@ -1,0 +1,83 @@
+.steps {
+    padding-top: 400px;
+    &__title {
+        text-align: left;
+        max-width: 732px;
+        margin-bottom: 80px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1573px;
+        margin: 0 auto;
+        min-width: 0;
+        .swiper-pagination {
+            bottom: 0;
+        }
+        .swiper-pagination-bullet {
+            width: 9px;
+            height: 9px;
+            margin: 0 20px;
+            margin: auto;
+        }
+        .swiper-pagination-bullet-active {
+            width: 14px;
+            height: 14px;
+            background-color: #7833DD;
+        }
+        .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        min-width: 0;
+    }
+    &__item {
+        max-width: 380px;
+        position: relative;
+        margin-bottom: 74px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__item-count {
+        font-weight: 300;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 72px;
+    }
+    &__item-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 35px;
+    }
+    &__item-descr {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 272px;
+    }
+    &__item-number {
+        position: absolute;
+        top: 14px;
+        right: 50px;
+        font-weight: 600;
+        font-size: 200px;
+        line-height: 234px;
+        background: linear-gradient(180deg, rgba(98, 85, 198, 0.37) 0%, rgba(145, 9, 246, 0.37) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__item-number--thrid {
+        right: 20px;
+    }
+    &__item-number--fourth {
+        right: 28px;
+    }
+    &__item-mobile {
+        display: none;
+    }
+}

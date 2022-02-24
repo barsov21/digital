@@ -1,0 +1,12 @@
+.footer {
+    background-color: #7F09D6;
+    padding: 39px 0 40px 0;
+    &__copy {
+        font-weight: 400;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 25px;
+        line-height: 31px;
+        color: #fff;
+        text-align: center;
+    }
+}
